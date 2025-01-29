@@ -12,7 +12,7 @@ export default function Header() {
           
           <div className="flex items-center gap-2">
             <img 
-              src="/images/logo2.jpg" 
+              src="/images/logo2.png" 
               alt="Secondary Logo" 
               className="h-8 w-auto"
             />
