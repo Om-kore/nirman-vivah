@@ -17,6 +17,8 @@ import UpdateRegistration from "./pages/Update";
 import SearchRegistration from "./pages/Search";
 import VerifiedRegistration from "./pages/Verified";
 import RegistrationForm from "./pages/Forms/NewRegistration";
+import HandicapRegistrationForm from "./pages/Forms/HandicapRegistrationForm";
+import SearchMarriageProfiles from "./pages/Search";
 
 export default function App() {
   return (
@@ -43,9 +45,11 @@ export default function App() {
         <Route path="/new" element={<NewRegistration />} />
         <Route path="/handicap" element={<HandicapRegistration />} />
         <Route path="/update" element={<UpdateRegistration />} />
-        <Route path="/search" element={<SearchRegistration />} />
+        <Route path="/search" element={<SearchMarriageProfiles />} />
         <Route path="/verified" element={<VerifiedRegistration />} />
         <Route path="/register" element={<RegistrationForm />} />
+        <Route path="/hregister" element={<HandicapRegistrationForm />} />
+
       </Routes>
     </Router>
   );

@@ -8,7 +8,7 @@ export default function Navbar() {
   const links = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
-    { name: 'Location', path: '/location' },
+    // { name: 'Location', path: '/location' },
     { name: 'Contact Us', path: '/contact' },
     { name: 'Benifit', path: '/benifit' },
     { name: 'More', path: '/more' },
@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className="bg-[#9b1c1c]">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-evenly h-16">
+        <div className="flex items-center justify-evenly h-12">
           {/* Mobile menu button */}
           <button
             className="md:hidden text-white font-extrabold"
@@ -37,7 +37,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.path}
-                className="text-white hover:text-gray-300 font-bold text-sm uppercase tracking-wide"
+                className="text-white hover:text-gray-300 font-bold  text-sm uppercase tracking-wide"
               >
                 {link.name}
               </Link>

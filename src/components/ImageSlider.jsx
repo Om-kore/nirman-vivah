@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function ImageSlider() {
   return (
-    <div className="w-full h-96">
+    <div className="w-full h-100">
       <Swiper
         spaceBetween={30}
         slidesPerView={1}
@@ -18,7 +18,7 @@ export default function ImageSlider() {
             <img
               src={`/images/slider-${slide}.jpg`}
               alt={`Slide ${slide}`}
-              className="w-full h-96 object-cover"
+              className="w-full h-100  object-cover"
             />
           </SwiperSlide>
         ))}
